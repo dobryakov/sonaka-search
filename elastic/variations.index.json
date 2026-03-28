@@ -1,0 +1,1229 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "refresh_interval": "1s"
+    }
+  },
+  "mappings": {
+    "properties": {
+      "variation_id": {
+        "type": "keyword"
+      },
+      "product_id": {
+        "type": "keyword"
+      },
+      "sku": {
+        "type": "keyword"
+      },
+      "variation_index": {
+        "type": "integer"
+      },
+      "search_all": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "brend": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "strana_izgotovleniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "garantiya_proizvoditelya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kollektsiya_lineyka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osnovnoy_tsvet_izdeliya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "aktsentnyy_tsvet_otdelka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "stil_interera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "klass_po_tsenovoy_lineyke": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_korpusa_obschiy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "pokrytie_korpusa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_postavki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "trebuetsya_sborka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sertifikaty_bezopasnosti": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "rekomenduemaya_komnata": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "gipoallergennost_marketing": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "klass_nagruzki_ekspluatatsiya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ekologichnost_materialov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sezonnost_ispolzovaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_furnitury": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vlagostoykost_pokrytiya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ustoychivost_k_tsarapinam": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "markirovka_i_uchet": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_dostavkoy_liftom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_garantiynogo_obsluzhivaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "upakovka_dlya_hraneniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_instruktsii_na_russkom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "region_brenda": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_ofitsialnogo_servisa_v_rf": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "rekomendatsiya_po_uhodu": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_detmi_i_zhivotnymi": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zhestkost_storony_a": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zhestkost_storony_b": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_konstruktsii_matrasa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_pruzhinnogo_bloka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_matrasa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osnovnoy_napolnitel": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dopolnitelnyy_sloy_komforta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "svoystva_chehla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_spalnoe_mesto": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "effekt_pamyati_v_yadre": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "plotnost_kokosovoy_koyry": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_lateksa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sezonnost_storon_sloev": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ortopedicheskiy_marketing_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_podogrevom_elektroosnovaniem": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_krovati_po_funktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_spalnogo_mesta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "forma_izgolovya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_izgolovya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_karkasa_krovati": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_nozhek_opor": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "obivka_krovati": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_obivki_krovati": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_podsvetki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_podemnogo_mehanizma": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolichestvo_yaschikov_hraneniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "rekomenduemaya_vysota_matrasa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_osnovaniem": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_krovat": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osobennosti_detskoy_modifikatsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_osnovaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_lameley": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "shag_lameley": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolichestvo_zon_regulirovki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nozhki_osnovaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_osnovanie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_matrasom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kreplenie_k_krovati": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "antiskrip_konstruktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_osnovaniya_v_sbore": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_chehla_na_osnovanii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "elektrofunktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_upravleniya_elektroosnovaniem": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "shum_elektroprivoda": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "pitanie_elektroosnovaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_divana": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "mehanizm_transformatsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napolnenie_sidenya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zhestkost_sidenya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "obivka_divana": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_podlokotnikov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_yaschika_dlya_belya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "glubina_posadki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_spinki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "forma_ugla_dlya_uglovyh": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "karkas_divana": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "semnost_chehlov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "spalnoe_mesto_shirina": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osobennosti_dlya_kvartiry_studii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_mesto": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_kresla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "mehanizm_reklaynera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "obivka_kresla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napolnenie_sidenya_kresla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_sidenya_ot_pola": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_podgolovnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "baza_nozhki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vraschenie_360": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podstavka_dlya_nog_v_komplekte": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podlokotniki_kresla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "stil_kresla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nagruzka_na_kreslo": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "setka_ventilyatsiya_spinki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "karman_derzhatel_pulta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "skladnost_dlya_hraneniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_shkafa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolichestvo_stvorok_dverey": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "glubina_korpusa_shkafa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napolnenie_shkafa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_fasada": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sistema_kupe": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_korpusa_shkafa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podsvetka_vnutri": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "petli_i_dovodchiki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsokol_vysota_ot_pola": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zerkalo_na_fasade": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vozmozhnost_vstraivaniya_tehniki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "seyf_taynik": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_polku": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sborka_i_kreplenie_k_stene": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_komoda_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolichestvo_yaschikov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napravlyayuschie_yaschikov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "verhnyaya_poverhnost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ruchki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nozhki_opory": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nisha_pod_tv": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ventilyatsiya_dlya_tehniki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "glubina_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kombinatsiya_otkrytyh_sektsiy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_fasada": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zaschita_ot_oprokidyvaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_zadney_stenki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osobennosti_dlya_prihozhey": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_stoleshnitsu_komoda": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "naznachenie_stola": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "forma_stoleshnitsy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_stoleshnitsy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razdvizhenie_transformatsiya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_v_sobrannom_vide_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nozhki_osnovanie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "regulirovka_vysoty": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kabel_menedzhment": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "pokrytie_stoleshnitsy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nalichie_yaschika_polki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ustoychivost_na_nerovnom_polu": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_so_stulyami": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ves_stoleshnitsy_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ulichnoe_ispolzovanie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sborka_stoleshnitsy_k_podstolyu": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_stula_tabureta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_sidenya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "spinka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_sidenya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podlokotniki_stula": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "baza_barnogo_stula": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "myagkoe_sidene": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "skladnost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nozhki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nagruzka_na_stul": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_so_stolom_po_vysote": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tkan_obivka_ustoychivost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dekor_i_stil": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolesa_roliki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podstavka_dlya_nog_barnogo": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "konfiguratsiya_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "shirina_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_otnositelno_krovati": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "material_korpusa_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "poverhnost_stoleshnitsy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ruchki_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "podsvetka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "usb_rozetki_v_tumbe": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nisha_dlya_knig": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zadnyaya_stenka_i_kabel": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kreplenie_k_stene": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_krovatyu_po_stilyu": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "nozhki_tumby": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vlagostoykost_dlya_uhoda": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_nagruzka_na_stoleshnitsu_tumby_prikrovatnoy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tolschina_toppera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osnovnoy_napolnitel_toppera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zhestkost_toppera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "chehol_toppera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kreplenie_k_matrasu": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimyy_razmer_matrasa": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "effekt_anatomicheskiy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "perforatsiya_ventilyatsiya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sezonnost_toppera": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "skrutka_v_rulon_roll_pack": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "semnost_i_stirka_chehla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_elektropodogrevom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ves_toppera_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "gipoallergennost_napolnitelya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "naznachenie_ispolzovaniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_zaschity": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "membrana_prosloyka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kreplenie_namatrasnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_borta_yubki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sostav_verhnego_sloya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "stirka_namatrasnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "semnost_verha": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "shum_membrany": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_nagrevom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zaschita_ot_allergenov": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_pod_matras": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "steganyy_risunok": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dopolnitelnye_funktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dlya_detey_i_malyshey": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "srok_sluzhby_zayavlennyy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napolnitel_podushki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vysota_profil": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zhestkost_podushki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "forma": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "chehol": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ortopedicheskie_svoystva": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "poza_sna": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ohlazhdayuschiy_effekt": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "pylevoy_klesch": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ves_napolnitelya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "semnost_i_stirka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zapah_novoy_podushki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "para_podushek_v_komplekte": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dlya_detey": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sezonnost_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "napolnitel_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "plotnost_klass_tepla": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "chehol_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "stezhka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vlagootvedenie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "gipoallergennost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ves_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "uhod_za_odeyalom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dlya_pary_raznye_predpochteniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "detskoe_odeyalo": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_spb": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dekor_i_tsvet": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "upakovka_odeyala": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_komplekta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sostav_tkani": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "plotnost_tkani": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "v_komplekte": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_prostyni": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zastezhka_pododeyalnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "print_dizayn": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "otdelka": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "stirka_komplekta_postelnogo_belya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "svetostoykost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dlya_matrasa_vysotoy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sezonnost_dizayna": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ekologichnost": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "upakovka_komplekta": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvetovaya_gamma": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_izdeliya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "razmer_prostyni_navolochki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tkan": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "plotnost_tip_perepleteniya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "glubina_prostyni_na_rezinke": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "kolichestvo_v_upakovke": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "otdelka_navolochki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "uhod_za_prostynyami_i_navolochkami": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "print": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "naznachenie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sertifikaty": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "upakovka_prostyney_i_navolochek": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sovmestimost_s_pododeyalnikom": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "osobennosti_tkani": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_holodilnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "obschiy_obem": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sistema_razmorozki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "klass_energopotrebleniya_holodilnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "invertornyy_kompressor": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "displey_i_upravlenie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zona_svezhesti": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "ldogenerator": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "dispenser_vody": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "shum_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "klimaticheskiy_klass": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "vstraivanie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "petli_i_otkryvanie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "poleznye_funktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_korpusa_holodilnika": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tip_mashiny": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zagruzka_belya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "maksimalnaya_skorost_otzhima": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "klass_energopotrebleniya_stiralnoy_mashiny": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "invertornyy_motor": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "sushka_belya": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "obem_sushki": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "uroven_shuma_pri_stirke": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "uroven_shuma_pri_otzhime": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "glubina_korpusa_stiralnoy_mashiny": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "parovye_funktsii": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "upravlenie": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "zaschita_ot_protechek": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "spetsialnye_programmy": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "tsvet_korpusa_stiralnoy_mashiny": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  }
+}
